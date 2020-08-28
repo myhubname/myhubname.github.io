@@ -1,0 +1,283 @@
+
+/*声明字体*/
+@font-face {
+    font-family: "foundation-icons";
+    src: url("../foundation-icons/foundation-icons.eot");
+    src: url("../foundation-icons/foundation-icons.eot?") format("embedded-opentype"), 
+    url("../foundation-icons/foundation-icons.woff") format("woff"), 
+    url("../foundation-icons/foundation-icons.ttf") format("truetype"), 
+    url("../foundation-icons/foundation-icons.svg") format("svg");
+    font-weight: normal;
+    font-style:normal
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?jwgr70');
+  src:  url('../fonts/icomoon.eot?jwgr70#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?jwgr70') format('truetype'),
+    url('../fonts/icomoon.woff?jwgr70') format('woff'),
+    url('../fonts/icomoon.svg?jwgr70#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+font-family: 'icomoon' !important;
+speak: never;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/*
+设置body:
+1.设置body内的字体
+2.设置字体大小
+3.设置至颜色
+4.设置宽度
+5.设置宽度
+6.设置元素为块级元素
+*/
+
+body {
+
+    font-family: "Raleway", sans-serif;
+
+    font-size: 1em;
+
+    color: #666666;
+
+    width: 100%;
+
+    line-height: 1;
+
+    display: block;
+}
+/*
+设置高度
+*/
+
+html,body {
+
+height: 100%;
+
+}
+/*
+1.设置标签的外边距为0
+2.设置标签的内边距为0
+3.设置标签的border为0
+4.设置字体继承body字体大小
+5.设置所有元素字体保持一致
+6.设置字体对Baseline垂直居中
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align:baseline
+}
+/*
+对header进行布局:
+1.设置元素为块级元素
+2.设置定位为：固定定位:生成绝对定位元素,相对于浏览器窗口进行定位;
+3.可通过z-index进行层次分级z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。
+4.设置宽度
+5.max-width 定义元素的最大宽度。默认为none
+6.设置背景: url:图片地址,将图片定位在最左侧和上侧,no-repeat:背景图像不平铺,背景色,;
+*/
+.panel-cover {
+    display: block;
+    position: fixed;
+    z-index: 900;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    background: url(../images/background-cover.jpg) top left no-repeat #666;
+    background-size:cover
+}
+
+/*
+设置主体部分的显示：
+1.（类似 <table>）此元素会作为块级表格来显示，表格前后带有换行符。
+2.设置宽度
+3.设置高度
+*/
+.panel-main {
+display: table;
+width: 100%;
+height: 100%;
+}
+/*
+1.设置为cell
+2.垂直居中
+3.对象不可层叠，但将依据left，right，top，bottom等属性在正常文档流中偏移位置
+4. 设置层级
+5.设置内边距
+*/
+.panel-main__inner {
+display: table-cell;
+vertical-align: middle;
+position: relative;
+z-index: 800;
+padding: 0 60px;
+}
+
+/*
+1.属性设置文本的粗细
+2.设置文本居中
+3.设置文本颜色
+4.给文本添加阴影
+*/
+.panel-inverted {
+font-weight: 100;
+text-align: center;
+color: #FFF;
+text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+/*
+ 设置内容
+ 1.设置最大宽度
+ 2.居中设置
+*/
+.panel-main__content {
+max-width: 620px;
+margin: 0 auto;
+}
+
+/*
+设置inverterd下a标签的样式
+1.颜色
+*/
+.panel-inverted a {
+  color: #FFF;
+}
+/*
+设置a标签的样式:
+1.没有下划线
+2.设置颜色 
+*/
+a {
+text-decoration: none;
+color: #e25440;
+}
+
+/*
+设置头像
+*/
+.user-image {
+margin-bottom: 1.2em;
+position: relative;
+width: 100px;
+height: 100px;
+border: 3px solid #fff;
+border-radius: 100%;
+}
+
+.panel-cover__divider
+{
+    width: 50%;
+    margin: 20px auto;
+    border-top: 1px solid rgba(255,255,255,0.14);
+}
+
+/*设置hr的border样式*/
+hr {
+
+    border: none;
+}
+
+hr {
+display: block;
+margin-block-start: 0.5em;
+margin-block-end: 0.5em;
+margin-inline-start: auto;
+margin-inline-end: auto;
+border-top-style: inset;
+border-top-width: 1px;
+}
+/*设置描述*/
+.panel-cover__description {
+  margin: 0 30px;
+}
+p {
+ margin-bottom: 1.3em;
+ line-height: 1.7em;
+}
+.fa, .fas {
+font-weight: 900;
+}
+.fa, .far, .fas {
+font-family: "Font Awesome 5 Free";
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+display: inline-block;
+font-style: normal;
+font-variant: normal;
+text-rendering: auto;
+line-height: 1;
+}
+
+i {
+font-family: 'icomoon';
+font-weight: normal;
+font-style: normal;
+font-size: 18px;
+}
+
+/*设置第二根线*/
+.panel-cover__divider {
+width: 50%;
+margin: 20px auto;
+border-top: 1px solid rgba(255,255,255,0.14);
+}
+/*设置第二根hr的宽度*/
+.panel-cover__divider--secondary {
+
+   width: 15%;
+
+}
+/*设置底部菜单*/
+.navigation--social {
+margin-right: 1.5em;
+}
+.cover-navigation {
+margin-top: 10px;
+}
+nav {
+display: inline-block;
+position: relative;
+}
+
+/*
+设置背景
+1.块级元素
+2.absolute : 　将对象从文档流中拖出，使用left，right，top，bottom等属性进行绝对定位。而其层叠通过css z-index属性定义。此时对象不具有边距，但仍有补白和边框
+3.设置层级
+4.设置上下左右
+5.设置背景颜色
+6.设置背景图
+7.设置背景图
+*/
+.panel-cover--overlay {
+display: block;
+position: absolute;
+z-index: 0;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-color: rgba(68,68,68,0.6);
+background-image: -webkit-linear-gradient(-410deg, rgba(68,68,68,0.6) 20%, rgba(0,0,0,0.9));
+background-image: linear-gradient(140deg, rgba(68,68,68,0.6) 20%, rgba(0,0,0,0.9));
+}
+
