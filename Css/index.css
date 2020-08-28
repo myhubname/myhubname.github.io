@@ -1,39 +1,16 @@
 
-/*声明字体*/
-@font-face {
-    font-family: "foundation-icons";
-    src: url("../foundation-icons/foundation-icons.eot");
-    src: url("../foundation-icons/foundation-icons.eot?") format("embedded-opentype"), 
-    url("../foundation-icons/foundation-icons.woff") format("woff"), 
-    url("../foundation-icons/foundation-icons.ttf") format("truetype"), 
-    url("../foundation-icons/foundation-icons.svg") format("svg");
-    font-weight: normal;
-    font-style:normal
-}
-
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?jwgr70');
   src:  url('../fonts/icomoon.eot?jwgr70#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?jwgr70') format('truetype'),
-    url('../fonts/icomoon.woff?jwgr70') format('woff'),
-    url('../fonts/icomoon.svg?jwgr70#icomoon') format('svg');
+  url('../fonts/icomoon.ttf?jwgr70') format('truetype'),
+ url('../fonts/icomoon.woff?jwgr70') format('woff'),
+url('../fonts/icomoon.svg?jwgr70#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-font-family: 'icomoon' !important;
-speak: never;
-font-style: normal;
-font-weight: normal;
-font-variant: normal;
-text-transform: none;
-line-height: 1;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-}
 /*
 设置body:
 1.设置body内的字体
@@ -83,6 +60,77 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 100%;
     font: inherit;
     vertical-align:baseline
+}
+
+nav {
+display: inline-block;
+position: relative;
+}
+
+ol li, ul li {
+    margin: 0 0 .2em 0;
+    line-height: 1.6em;
+}
+
+ul {
+ list-style-type: disc;
+}
+
+ol, ul {
+ margin: 0 0 1.3em 2.5em;
+}
+
+ol, ul {
+list-style: none;
+}
+
+i {
+font-family: 'icomoon';
+font-weight: normal;
+font-style: normal;
+font-size: 18px;
+}
+
+p {
+ margin-bottom: 1.3em;
+ line-height: 1.7em;
+}
+
+/*
+设置a标签的样式:
+1.没有下划线
+2.设置颜色 
+*/
+a {
+text-decoration: none;
+color: #e25440;
+
+}
+
+/*设置hr的border样式*/
+hr {
+
+    border: none;
+}
+
+hr {
+display: block;
+margin-block-start: 0.5em;
+margin-block-end: 0.5em;
+margin-inline-start: auto;
+margin-inline-end: auto;
+border-top-style: inset;
+border-top-width: 1px;
+}
+
+ul, menu, dir {
+display: block;
+list-style-type: disc;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+padding-inline-start: 40px;
 }
 /*
 对header进行布局:
@@ -159,15 +207,6 @@ margin: 0 auto;
 .panel-inverted a {
   color: #FFF;
 }
-/*
-设置a标签的样式:
-1.没有下划线
-2.设置颜色 
-*/
-a {
-text-decoration: none;
-color: #e25440;
-}
 
 /*
 设置头像
@@ -188,34 +227,17 @@ border-radius: 100%;
     border-top: 1px solid rgba(255,255,255,0.14);
 }
 
-/*设置hr的border样式*/
-hr {
-
-    border: none;
-}
-
-hr {
-display: block;
-margin-block-start: 0.5em;
-margin-block-end: 0.5em;
-margin-inline-start: auto;
-margin-inline-end: auto;
-border-top-style: inset;
-border-top-width: 1px;
-}
 /*设置描述*/
 .panel-cover__description {
   margin: 0 30px;
 }
-p {
- margin-bottom: 1.3em;
- line-height: 1.7em;
-}
+
+
 .fa, .fas {
 font-weight: 900;
 }
 .fa, .far, .fas {
-font-family: "Font Awesome 5 Free";
+ font-family: "icomoon";
 }
 .fa, .fab, .fad, .fal, .far, .fas {
 -moz-osx-font-smoothing: grayscale;
@@ -227,12 +249,6 @@ text-rendering: auto;
 line-height: 1;
 }
 
-i {
-font-family: 'icomoon';
-font-weight: normal;
-font-style: normal;
-font-size: 18px;
-}
 
 /*设置第二根线*/
 .panel-cover__divider {
@@ -248,15 +264,83 @@ border-top: 1px solid rgba(255,255,255,0.14);
 }
 /*设置底部菜单*/
 .navigation--social {
-margin-right: 1.5em;
+   margin-right: 1.5em;
 }
+
+.navigation--social a {
+ 
+ padding: 9px 9px 9px 9px;   
+
+}
+
 .cover-navigation {
-margin-top: 10px;
+
+    margin-top: 10px;
 }
-nav {
+
+/*设置导航*/
+.navigation {
 display: inline-block;
+float: left;
 position: relative;
+margin: 0;
+list-style-type: none;
 }
+
+/*设置item*/
+.navigation__item {
+  
+  display: inline-block;
+
+  margin: 0 2px 0 0;
+
+  line-height: 1em;
+
+}
+
+/*设置item内的子元素*/
+
+.navigation__item a {
+
+ 
+   border: 1px solid #e25440;
+   
+   border-radius: 20px;
+
+   font-size: .9em;
+
+   font-weight: bold;
+
+   letter-spacing: 1px;
+  
+  text-shadow: none;
+
+  -webkit-font-smoothing:antialiased;
+}
+
+
+.navigation__item a {
+
+   margin: 5px 0;
+
+   white-space: nowrap;
+
+   display: block;
+
+   position: relative;
+
+   border-color: #fff;
+
+   color: #fff;
+
+   opacity: .8;
+}
+
+
+
+
+
+
 
 /*
 设置背景
