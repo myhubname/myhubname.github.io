@@ -1,0 +1,178 @@
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?jtgurv');
+  src:  url('fonts/icomoon.eot?jtgurv#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?jtgurv') format('truetype'),
+    url('fonts/icomoon.woff?jtgurv') format('woff'),
+    url('fonts/icomoon.svg?jtgurv#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+body {
+	font-size: 18px;
+
+	min-width: 600px;
+
+    background-color: #F4F4F4;
+
+}
+.container {
+
+   width: 100%;
+   
+   overflow:hidden;
+ 
+}
+
+.left {
+
+	width: 200px;
+
+	height:100%;
+
+	float: left;
+
+	background-color: #2E4E5C;
+
+	margin-right: -200px;
+
+	padding-bottom:9999px;
+	margin-bottom:-9999px;
+	
+	position: relative;
+
+}
+
+.right {
+
+  width: 100%;
+
+
+  float: right;
+
+  background-color: #F4F4F4;
+
+  margin-right: -210px;
+}
+
+.left img {
+
+	height: 120px;
+
+	width: 100px;
+
+	padding: 30px 50px 0px 50px;
+
+	margin: 0px;
+
+}
+.left h6 {
+
+	text-align: center;
+
+	color: white;
+
+	margin: 0px;
+
+	margin-top: 10px;
+
+	font-size: 16px;
+
+	font-weight: normal;
+
+}
+
+.left p {
+
+  font-size: 12px;
+  margin: 0px; 
+  text-align: center;
+  color: #819297;
+}
+
+.left dl {
+
+	font-size: 13px;
+
+	margin: 0px;
+
+
+	padding: 10px 0px 5px 10px;
+
+	color: #819297;
+
+}
+.left dl:last-child{
+
+	padding-bottom: 10px;
+}
+
+.left dt {
+
+	border-bottom: 1px solid #819297;
+
+	padding-bottom: 5px;
+}
+.left dt i {
+font-family: 'icomoon';
+font-weight: normal;
+font-style: normal;
+}
+
+.right dl {
+
+   font-size: 13px;
+
+   margin: 0px;
+
+   padding: 0px;
+
+   color: #B5B5B5;
+}
+
+.right dt {
+
+	border-bottom: 1px solid #819297;
+
+	font-weight: bold;
+
+	font-size: 15px;
+
+	color: #2F4E59;
+
+}
+.right dt i {
+font-family: 'icomoon';
+font-weight: normal;
+font-style: normal;
+padding-right: 10px;
+}
+
+.right span {
+
+   font-size: 13px;
+
+   color: black;
+}
+.right dl {
+
+	line-height: 25px;
+}
+
+.right .workFrome span {
+
+	padding-right: 5px;
+
+}
+
+.right .workFrome  {
+
+	border-bottom: 1px solid #B5B5B5;
+}
+
+
+
+
