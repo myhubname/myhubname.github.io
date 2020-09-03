@@ -18,11 +18,14 @@ body {
 
     background-color: #F4F4F4;
 
+
+
 }
 .container {
 
    width: 100%;
    
+
    overflow:hidden;
  
 }
@@ -41,7 +44,7 @@ body {
 
 	padding-bottom:9999px;
 	margin-bottom:-9999px;
-	
+
 	position: relative;
 
 }
